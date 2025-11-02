@@ -1,0 +1,25 @@
+:root{--bg:#f7fafc;--card:#fff;--accent:#f3b600;--muted:#556}
+*{box-sizing:border-box} body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#071128}
+.app-wrap{max-width:1100px;margin:24px auto;padding:16px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.mark{width:42px;height:42px;border-radius:8px;background:linear-gradient(135deg,#ffd166,#f3b600);display:flex;align-items:center;justify-content:center;color:#041;font-weight:900}
+.grid{display:grid;grid-template-columns:340px 1fr;gap:16px}
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ee;margin-top:8px}
+.coin-list{max-height:72vh;overflow:auto;margin-top:10px}
+.coin-item{display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid #f1f4f8;cursor:pointer}
+.coin-item:hover{background:#fbfbfb}
+.name{font-weight:700}
+.small-muted{font-size:12px;color:var(--muted)}
+.converter{display:flex;gap:12px;align-items:flex-end}
+.row{display:flex;gap:8px}
+.btn{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+.btn.secondary{background:#eef2ff;color:#063}
+.btn.small{padding:6px 8px;font-size:13px}
+.big{font-size:28px;font-weight:800;margin-top:8px}
+.footer-note{font-size:13px;color:#6b7280;margin-top:8px}
+.app-wrap.dark{background:#0b1220;color:#e6eefc}
+.app-wrap.dark .card{background:#07102a;color:#e6eefc}
+.app-wrap.dark input, .app-wrap.dark select{background:#07102a;color:#e6eefc;border:1px solid #0b1630}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
